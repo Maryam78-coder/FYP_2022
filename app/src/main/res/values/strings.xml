@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WearNCare</string>
+    <string name="firstLine"><br>Want to detect mask on a picture</br></string>
+    <string name="secLine"><br>Check your collected data </br>
+    <br>in wearNcare</br></string>
+
+    <string name="about">
+        WearNCare app facilitate user by identify whether a user wear a mask or not by taking picture from camera.After taking
+        picture results are shown.WearNCare app store user image as a record collection in its database so that user can see
+        collected data record at any time.For better Experience have a try.
+    </string>
+
+    <string name="Text">
+       Lets Start..
+    </string>
+</resources>

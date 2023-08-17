@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/design_bg"
+    tools:context=".Activities.homeIden">
+
+    <TextView
+        android:text="Identification"
+        android:fontFamily="serif"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:id="@+id/imageview"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classified as:"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/classified"
+        android:textColor="@color/white"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classified"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:fontFamily="serif"
+        android:textColor="@color/purple"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confidencesText"
+        android:textColor="@color/white"
+        android:text="Confidences:"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="@color/purple"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:id="@+id/confidence"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:text="Take Picture"
+        android:id="@+id/button"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        app:strokeColor="@color/purple"
+        android:textStyle="bold"
+        app:cornerRadius="18dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>

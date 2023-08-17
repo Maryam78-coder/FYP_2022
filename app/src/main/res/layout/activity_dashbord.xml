@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.dashbord_activity">
+
+
+    <RelativeLayout
+        android:id="@+id/WaveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="My DashBoard"
+            android:fontFamily="serif"
+            android:textColor="@color/purple"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/waveHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.scwang.wave.MultiWaveHeader
+            app:mwhStartColor="@color/white"
+            app:mwhCloseColor="@color/purple"
+            app:mwhGradientAngle="45"
+            app:mwhIsRunning="true"
+            app:mwhProgress="1"
+            app:mwhVelocity="1"
+            app:mwhWaveHeight="40dp"
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+        <com.scwang.wave.MultiWaveHeader
+            android:layout_alignParentBottom="true"
+            app:mwhStartColor="@color/white"
+            app:mwhCloseColor="@color/purple"
+            app:mwhGradientAngle="45"
+            app:mwhIsRunning="true"
+            app:mwhProgress="1"
+            app:mwhVelocity="1"
+            app:mwhWaveHeight="40dp"
+            android:scaleY="-1"
+            android:id="@+id/waveFooter"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                android:id="@+id/cardPic"
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:background="@drawable/img3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textSize="20dp"
+                        android:text="Take Picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentRight="true"
+                android:id="@+id/cardData"
+                android:layout_width="190dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="200dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="0dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:background="@drawable/img3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/use_mask">
+
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/teal_700"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textColor="@color/teal_700"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Desk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDetail"
+                android:layout_below="@id/cardPic"
+                android:layout_marginTop="0dp"
+                android:layout_width="190dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="200dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:background="@drawable/img3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/new_cases_icon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/purple_500"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/cardData"
+                android:id="@+id/cardAbout"
+                android:layout_width="190dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="250dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="0dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:background="@drawable/img3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/recovered_icon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/teal_200"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="About Us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    android:layout_above="@id/waveFooter"
+    app:fab_addButtonPlusIconColor="@color/white"
+    app:fab_addButtonColorNormal="@color/purple"
+    app:fab_addButtonColorPressed="@color/white"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="8dp"
+    app:fab_expandDirection="up"
+    app:fab_labelsPosition="left"
+    app:fab_labelStyle="@style/LabelStyle"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        app:fab_colorPressed="@color/white"
+        app:fab_colorNormal="@color/white"
+        app:fab_title="Logout"
+        app:fab_icon="@drawable/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+</LinearLayout>
